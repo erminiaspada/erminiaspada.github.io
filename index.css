@@ -88,6 +88,29 @@ a:disabled {
   margin: 0 !important;
 }
 
+.button--contained-dark-sky {
+  display: inline-flex;
+  padding: 16px 12px 15px 12px;
+  color: var(--nebulosa);
+  background-color: var(--dark-sky);
+}
+
+.button--contained-dark-sky:hover {
+  color: var(--nebulosa);
+  background-color: var(--primary-hover);
+}
+
+.button--contained-dark-sky:active {
+  color: var(--nebulosa);
+  background-color: var(--primary-pressed);
+}
+
+.button--contained-nebulosa:disabled {
+  opacity: 0.38;
+  color: var(--nebulosa);
+  background-color: var(--dark-sky);
+}
+
 .button--contained-nebulosa {
   display: inline-flex;
   padding: 16px 12px 15px 12px;
@@ -109,6 +132,31 @@ a:disabled {
   opacity: 0.48;
   color: var(--dark-sky);
   background-color: var(--nebulosa);
+}
+
+.button--outlined {
+  display: inline-flex;
+  padding: 16px 12px 15px 12px;
+  color: var(--nebulosa);
+  border: var(--nebulosa);
+}
+
+.button--outlined:hover {
+  color: var(--Milky-way);
+  background-color: rgba(240, 204, 255, 0.18);
+  border: 3px solid var(--milky-way);
+}
+
+.button--outlined:active {
+  color: var(--saturn);
+  background-color: rgba(192, 75, 242, 0.18);
+  border: 3px solid var(--saturn);
+}
+
+.button--outlined:disabled {
+  opacity: 0.38;
+  color: var(--nebulosa);
+  border: var(--nebulosa);
 }
 
 .subtitle {
