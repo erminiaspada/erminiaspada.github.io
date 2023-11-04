@@ -201,11 +201,12 @@ a:disabled {
 }
 
 .header {
+  display: flex;
+  flex-direction: row;
   margin: 0 30px 24px 30px;
   overflow: hidden;
   padding: 0 0 16px 0;
   align-items: center;
-  display: flex;
 }
 
 .header a {
@@ -213,7 +214,6 @@ a:disabled {
 }
   
 .header-right {
-  float: right;
   margin-left: auto;
 }
   
@@ -258,13 +258,12 @@ a:disabled {
 }
 
 .footer {
-  margin: 0 30px 24px 30px;
-  padding-bottom: 24px;
-  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  margin: 24px 30px 24px 30px;
 }
 
 .footer-right {
-  float: right;
   margin-left: auto;
   display: inline-flex;
   justify-content: center;
