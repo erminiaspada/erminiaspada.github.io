@@ -57,12 +57,6 @@ h6 {
   font-weight: 700;
 }
 
-.p-canva {
-  color: var(--White);
-  font-size: 50px;
-  font-weight: 400;
-}
-
 a {
   display: inline-flex;
   padding: 16px 12px 15px 12px;
@@ -203,9 +197,8 @@ a:disabled {
 .header {
   display: flex;
   flex-direction: row;
-  margin: 0 30px 24px 30px;
+  margin: 8px 30px 24px 30px;
   overflow: hidden;
-  padding: 0 0 16px 0;
   align-items: center;
 }
 
@@ -230,13 +223,33 @@ a:disabled {
 }
 
 .canva {
-  margin: 64px 30px 156px 30px;
+  margin: 142px 30px 0 130px;
+  display: flex;
+  flex-direction: row;
+  min-height: 812px;
 }
 
 .canva__blur {
   background-image: url(assets/desk_top_blur.png);
   background-position: right bottom;
   background-repeat: no-repeat;
+}
+
+.canva h1 {
+  margin: 0;
+}
+
+.canva__subtitle {
+  color: var(--White);
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.canva__image {
+    position: absolute;
+    right: 130px;
+    top: 382px;
 }
 
 .contacts {
