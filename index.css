@@ -57,7 +57,7 @@ h6 {
   font-weight: 700;
 }
 
-a {
+.link {
   display: inline-flex;
   padding: 16px 12px 15px 12px;
   justify-content: center;
@@ -69,15 +69,15 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.link:hover {
   color: var(--milky-way);
 }
 
-a:active {
+.link:active {
   color: var(--saturn);
 }
 
-a:disabled {
+.link:disabled {
   color: (228, 168, 254, 0.38);
 }
 
@@ -88,11 +88,11 @@ a:disabled {
   align-items: center;
   gap: 12px;
   margin: 0 !important;
+  padding: 8px 12px 8px 12px;
 }
 
 .button--contained-dark-sky {
   display: inline-flex;
-  padding: 16px 12px 15px 12px;
   color: var(--nebulosa);
   background-color: var(--dark-sky);
   width: 216px;
@@ -116,7 +116,6 @@ a:disabled {
 
 .button--contained-nebulosa {
   display: inline-flex;
-  padding: 16px 12px 15px 12px;
   color: var(--dark-sky);
   background-color: var(--nebulosa);
 }
@@ -139,13 +138,15 @@ a:disabled {
 
 .button--outlined {
   display: inline-flex;
-  padding: 16px 12px 15px 12px;
   color: var(--nebulosa);
-  border: var(--nebulosa);
+  border: 3px solid var(--nebulosa);
+  width: 216px;
+  justify-content: center;
+  align-items: center;
 }
 
 .button--outlined:hover {
-  color: var(--Milky-way);
+  color: var(--milky-way);
   background-color: rgba(240, 204, 255, 0.18);
   border: 3px solid var(--milky-way);
 }
@@ -243,6 +244,7 @@ a:disabled {
   height: 892px;
   top: 0;
   right: 0;
+  z-index: -1;
 }
 
 .canva__container-text {
@@ -261,9 +263,46 @@ a:disabled {
 }
 
 .canva__image {
-    position: absolute;
-    right: 130px;
-    top: 382px;
+  position: absolute;
+  right: 130px;
+  top: 382px;
+}
+
+.myworks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.card {
+  justify-content: center;
+  align-items: center;
+}
+
+.card--long {
+  width: 682px;
+  height: 548px;
+  border: 3px solid var(--nebulosa);
+}
+
+.card--short {
+  width: 682px;
+  height: 430px;
+  border: 3px solid var(--nebulosa);
+}
+
+.container-cards-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.container-cards-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .about {
@@ -317,8 +356,8 @@ a:disabled {
   position: absolute;
   width: 1440px;
   height: 892px;
-  top: 2072;
   left: 0;
+  z-index: -1;
 }
 
 .contacts {
