@@ -57,6 +57,10 @@ h6 {
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+}
+
 .link {
   display: inline-flex;
   padding: 16px 12px 15px 12px;
@@ -66,7 +70,6 @@ h6 {
   color: var(--nebulosa);
   font-size: 18px;
   font-weight: 700;
-  text-decoration: none;
 }
 
 .link:hover {
@@ -280,6 +283,18 @@ h6 {
   align-items: center;
 }
 
+.card:hover {
+  border: 3px solid var(--milky-way);
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+
+.card:active {
+  border: 3px solid var(--saturn);
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+
 .card--long {
   width: 682px;
   height: 548px;
@@ -290,6 +305,48 @@ h6 {
   width: 682px;
   height: 430px;
   border: 3px solid var(--nebulosa);
+}
+
+.card-title-container {
+  position: relative;
+  bottom: 100px;
+  width: 650px;
+  height: 64px;
+  padding: 16px;
+  margin: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: var(--milky-way);
+  box-sizing: border-box;
+  display: flex;
+  opacity: 0;
+  transition : ease-out .3s;
+  -wekit-transition : ease-out .3s;
+  -moz-transition : ease-out .3s;
+}
+    
+/* Animazione con ease-out */
+@keyframes cardTitleAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card:hover .card-title-container {
+  animation: cardTitleAnimation 0.3s ease-out;
+  opacity: 1;
+}
+
+.card:active .card-title-container {
+  animation: cardTitleAnimation 0.3s ease-out;
+  opacity: 1;
+  color: var(--white);
+  background-color: var(--saturn);
 }
 
 .container-cards-row {
