@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
 
 :root {
   --nebulosa: rgba(228, 168, 254, 1);
@@ -27,34 +27,35 @@ body {
 }
 
 h1 {
-  font-size: 100px;
-  font-weight: 700;
-  padding-bottom: 4px;
+  font-size: 108.37px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: normal;
 }
 
 h2 {
   font-size: 49px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h3 {
   font-size: 39px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h4 {
   font-size: 31px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h5 {
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h6 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 a {
@@ -188,6 +189,12 @@ a {
   fill: var(--nebulosa);
 }
 
+.fab {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
 .title-section {
   margin: 0;
   text-align: center;
@@ -232,10 +239,19 @@ a {
 }
 
 .canva {
-  margin: 142px 30px 0 130px;
+  padding: 172px 0 172px 0;
   display: flex;
-  flex-direction: row;
-  min-height: 812px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.canva__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
 }
 
 .canva__blur {
@@ -251,24 +267,24 @@ a {
 }
 
 .canva__container-text {
-  z-index: 1;
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  /*width: 1094.675px;*/
+  align-items: flex-start;
 }
 
 .canva h1 {
-  margin: 0;
+  margin-bottom: -32px;
+  margin-top: 0;
 }
 
 .canva__subtitle {
-  color: var(--White);
-  font-size: 50px;
-  font-weight: 400;
+  color: var(--eclipse);
+  font-size: 77.8px;
+  font-weight: 500;
   margin: 0;
-}
-
-.canva__image {
-  position: absolute;
-  right: 130px;
-  top: 382px;
+  line-height: normal;
 }
 
 .myworks {
@@ -419,20 +435,38 @@ a {
 
 .contacts {
   display: flex;
-  padding: 210px 0px;
+  padding-top: 210px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 82px;
+  background: var(--moon);
+}
+
+.contacts__paws {
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  align-items: center;
+}
+
+.contacts__container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background: var(--moon);
-  width: 100%;
-  margin: 0;
+  align-self: stretch;
 }
 
-.contacts__text {
+
+.contacts__container-text {
   color: var(--milky-way);
   text-align: center;
   margin: 0;
+}
+
+.contacts__container-text--blue {
+  color: var(--dark-sky);
 }
 
 .footer {
