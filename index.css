@@ -239,7 +239,7 @@ a {
 }
 
 .canva {
-  padding: 172px 0 172px 0;
+  padding: 88px 0 160px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -381,7 +381,7 @@ a {
 .about {
   display: flex;
   flex-direction: column;
-  margin: 194px 30px 194px 30px;
+  margin: 160px 30px 160px 30px;
   gap: 40px;
 }
 
