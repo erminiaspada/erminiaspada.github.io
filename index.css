@@ -321,17 +321,19 @@ a {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
   align-self: stretch;
-  padding: 16px;
   gap: 10px;
 }
 
 .card h5 {
   margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card:hover {
@@ -347,18 +349,18 @@ a {
 }
 
 .card--long {
-  width: 682px;
   height: 548px;
   border: 3px solid var(--nebulosa);
 }
 
 .card--short {
-  width: 682px;
   height: 430px;
   border: 3px solid var(--nebulosa);
 }
 
 .card-title-container {
+  position: relative;
+  bottom: 108px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -366,6 +368,7 @@ a {
   gap: 12px;
   align-self: stretch;
   padding: 16px;
+  margin: 16px;
   background-color: var(--milky-way);
   box-sizing: border-box;
   opacity: 0;
@@ -409,6 +412,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
   gap: 24px;
 }
 
