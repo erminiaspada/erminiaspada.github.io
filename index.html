@@ -3,6 +3,7 @@
     <head>
         <title>Erminia Spada | Design Portfolio</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Hi there! I'm Erminia, UI/UX designer working in Milano. Check out my portfolio!"/>
         <meta name="keywords" content="Design, UX, UI, UX/UI, Product Design">
         <meta name="author" content="Erminia Spada">
@@ -10,149 +11,133 @@
         <script src="index.js" defer></script>
     </head>
     <body>
-        <header class="header">
-            <a href="https://erminiaspada.it" class="link logo">
-                <img class="default-logo" alt="Erminia Spada Logo" src="assets/erminia_logo.svg" srcset="assets/erminia_logo.svg">
-            </a>
-            <div class="header-right">
-                <a class="link" href="#myworks">I miei lavori</a>
-                <a class="link" href="#about">Chi sono</a>
-                <a class="link button button--contained-nebulosa" href="#contacts">Contattami</a>
-            </div>
-        </header>
-
-        <main>
-            <section class="canva">
-                <div class="canva__container">
-                    <div class="canva__container-text">
-                        <h1>Ciao! Sono Erminia</h1>
-                        <p class="canva__subtitle">Cat-lover UX/UI Designer :&#41;</p>
-                    </div>
-                    <!--<div class="canva__blur"></div>-->
-                    <div class="canva__image">
-                        <img alt="Space Cat Image" src="assets/cat_illustration.svg" srcset="assets/cat_illustration.svg">
-                    </div>
+        <div class="wrapper">
+            <header class="header">
+                <a href="https://erminiaspada.it" class="link logo">
+                    <img class="default-logo" alt="Erminia Spada Logo" src="assets/erminia_logo.svg" srcset="assets/erminia_logo.svg">
+                </a>
+                <div class="header-right">
+                    <a class="link" href="#myworks">I miei lavori</a>
+                    <a class="link" href="#about">Chi sono</a>
+                    <a class="link button button--contained-nebulosa" href="#contacts">Contattami</a>
                 </div>
-            </section>
+            </header>
 
-            <div class="myworks" id="myworks">
-                <h2 class="title-section">I miei lavori</h2>
-                <div class="container-cards-row">
-                    <div class="container-cards-column">
-                        <a class="card card--long" href="">
-                            <img src="assets/long_card_placeholder.png" alt="Project Image">
-                            <div class="card-title-container">
-                                <h5>Title goes here</h5>
-                            </div>
-                        </a>
-                        <a class="card card--short" href="">
-                            <img src="assets/short_card_placeholder.png" alt="Project Image">
-                            <div class="card-title-container">
-                                <h5>Title goes here</h5>
-                            </div>
-                        </a>
+            <main>
+                <section class="canva">
+                    <div class="canva__container">
+                        <div class="canva__container-text">
+                            <h1>Ciao! Sono Erminia</h1>
+                            <p class="canva__subtitle">Cat-lover UX/UI Designer :&#41;</p>
+                        </div>
+                        <div class="canva__image">
+                            <img alt="Space Cat Image" src="assets/cat_illustration.svg" srcset="assets/cat_illustration.svg">
+                        </div>
                     </div>
-                    <div class="container-cards-column">
-                        <a class="card card--short" href="">
-                            <img src="assets/short_card_placeholder.png" alt="Project Image">
-                            <div class="card-title-container">
-                                <h5>Title goes here</h5>
-                            </div>
-                        </a>
-                        <a class="card card--long" href="">
-                            <img src="assets/long_card_placeholder.png" alt="Project Image">
-                            <div class="card-title-container">
-                                <h5>Title goes here</h5>
-                            </div>
-                        </a>
+                </section>
+
+                <div class="myworks" id="myworks">
+                    <h2 class="title-section">I miei lavori</h2>
+                    <div class="container-cards-row">
+                        <div class="container-cards-column">
+                            <a class="card card--long" href="">
+                                <!--<img src="assets/long_card_placeholder.png" alt="Project Image">-->
+                                <div class="card-title-container">
+                                    <h5>Title goes here</h5>
+                                </div>
+                            </a>
+                            <a class="card card--short" href="">
+                                <!--<img src="assets/short_card_placeholder.png" alt="Project Image">-->
+                                <div class="card-title-container">
+                                    <h5>Title goes here</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="container-cards-column">
+                            <a class="card card--short" href="">
+                                <!--<img src="assets/short_card_placeholder.png" alt="Project Image">-->
+                                <div class="card-title-container">
+                                    <h5>Title goes here</h5>
+                                </div>
+                            </a>
+                            <a class="card card--long" href="">
+                                <!--<img src="assets/long_card_placeholder.png" alt="Project Image">-->
+                                <div class="card-title-container">
+                                    <h5>Title goes here</h5>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+                    <a class="link button button--outlined" href="https://www.behance.net/erminiaspada">Scopri di più</a>
                 </div>
-                <a class="link button button--outlined" href="https://www.behance.net/erminiaspada">Scopri di più</a>
-            </div>
 
-            <div class="about" id="about">
-                <h2 class="title-section">Chi sono</h2>
-                <div class="about__row">
-                    <div class="about__picture">
-                        <img src="assets/foto_erminia.png" alt="Erminia's picture">
-                        <!--<div class="about__picture-square"></div>-->
-                    </div>
-                    <div class="about__text">
-                        <p>
-                            Ciao, sono Erminia e... sono una Designer!
-                        </p>
-                        <p>
-                            La mia storia inizia con tanta passione per il disegno, un semplice corso di Photoshop e una tavoletta grafica perché volevo vedere le mie illustrazioni prendere vita sul monitor.</br>
-                            Da quel momento non mi sono più fermata: ho studiato il Graphic</br> Design, per poi arrivare alla UX/UI.</br>
-                            Più approfondivo quegli argomenti, più li amavo:
-                        </p>
-                        <p class="about__text--pink">
-                            vedere le immagini che ho in mente concretizzarsi sullo schermo, che si tratti di illustrazioni o di interfacce grafiche, è qualcosa di bellissimo.
-                        </p>
-                        <div class="about__text--heart-icon">
+                <div class="about" id="about">
+                    <h2 class="title-section">Chi sono</h2>
+
+                    <div class="about__row">
+                        <div class="about__picture">
+                            <img src="assets/foto_erminia.png" alt="Erminia's picture">
+                        </div>
+                        <div class="about__text">
                             <p>
-                                Oggi lavoro come <span class="about__text--pink">Product Designer</span> a Milano. 
+                                Ciao, sono Erminia e... sono una Designer!
                             </p>
-                            <span class="heart-icon"></span>
+                            <p>
+                                La mia storia inizia con tanta passione per il disegno, un semplice corso di Photoshop e una tavoletta grafica perché volevo vedere le mie illustrazioni prendere vita sul monitor.</br>
+                                Da quel momento non mi sono più fermata: ho studiato il Graphic</br> Design, per poi arrivare alla UX/UI.</br>
+                                Più approfondivo quegli argomenti, più li amavo:
+                            </p>
+                            <p class="about__text--pink">
+                                vedere le immagini che ho in mente concretizzarsi sullo schermo, che si tratti di illustrazioni o di interfacce grafiche, è qualcosa di bellissimo.
+                            </p>
+                            <div class="about__text--heart-icon">
+                                <p>
+                                    Oggi lavoro come <span class="about__text--pink">Product Designer</span> a Milano.
+                                </p>
+                                <span class="heart-icon"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--<div class="about__blur"></div>-->
-            </div>
 
-            <div class="contacts" id="contacts">
-                <div class="contacts__container">
-                    <h2 class="contacts__container-text">Facciamo qualcosa </br> <span class="contacts__container-text--blue">di bellissimo</span> insieme!</h2>
-                    <a class="link button button--contained-dark-sky" href="mailto:erminia.spada7@gmail.com">Contattami!</a>
+                <div class="contacts" id="contacts">
+                    <div class="contacts__container">
+                        <h2 class="contacts__container-text">Facciamo qualcosa </br> <span class="contacts__container-text--blue">di bellissimo</span> insieme!</h2>
+                        <a class="link button button--contained-dark-sky" href="mailto:erminia.spada7@gmail.com">Contattami!</a>
+                    </div>
+                    <div class="contacts__paws">
+                        <img alt="Cat Paws Image" src="paws.svg" srcset="assets/paws.svg">
+                    </div>
                 </div>
-                <div class="contacts__paws">
-                    <img alt="Cat Paws Image" src="paws.svg" srcset="assets/paws.svg">
+            </main>
+
+            <footer class="footer">
+                <div class="footer-right">
+                    <span>Contatti</span>
+                    <a class="link" href="mailto:erminia.spada7@gmail.com">
+                        <svg class="icon-button" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M22.1666 4.66663H5.83325C4.90499 4.66663 4.01476 5.03538 3.35838 5.69175C2.702 6.34813 2.33325 7.23837 2.33325 8.16663V19.8333C2.33325 20.7615 2.702 21.6518 3.35838 22.3082C4.01476 22.9645 4.90499 23.3333 5.83325 23.3333H22.1666C23.0948 23.3333 23.9851 22.9645 24.6415 22.3082C25.2978 21.6518 25.6666 20.7615 25.6666 19.8333V8.16663C25.6666 7.23837 25.2978 6.34813 24.6415 5.69175C23.9851 5.03538 23.0948 4.66663 22.1666 4.66663ZM22.1666 6.99996L14.5833 12.215C14.4059 12.3174 14.2047 12.3713 13.9999 12.3713C13.7951 12.3713 13.5939 12.3174 13.4166 12.215L5.83325 6.99996H22.1666Z"/>
+                        </svg>
+                    </a>
+
+                    <a class="link" href="https://www.linkedin.com/in/erminia-spada-82bb88142/">
+                        <svg class="icon-button" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M17.6751 9.79997C16.7809 9.7969 15.8949 9.97018 15.0677 10.3099C14.2406 10.6496 13.4885 11.1491 12.8546 11.7797C12.2207 12.4104 11.7174 13.1599 11.3734 13.9853C11.0295 14.8107 10.8516 15.6958 10.8501 16.59V23.45C10.8501 23.7284 10.9607 23.9955 11.1576 24.1924C11.3545 24.3893 11.6216 24.5 11.9001 24.5H14.3501C14.6286 24.5 14.8956 24.3893 15.0926 24.1924C15.2895 23.9955 15.4001 23.7284 15.4001 23.45V16.59C15.3999 16.2719 15.4667 15.9574 15.5961 15.6669C15.7256 15.3765 15.9148 15.1165 16.1515 14.9041C16.3882 14.6916 16.667 14.5314 16.9697 14.4339C17.2724 14.3365 17.5923 14.3039 17.9084 14.3383C18.4754 14.4097 18.9965 14.6867 19.3728 15.1168C19.7492 15.5469 19.9546 16.1002 19.9501 16.6716V23.45C19.9501 23.7284 20.0607 23.9955 20.2576 24.1924C20.4545 24.3893 20.7216 24.5 21.0001 24.5H23.4501C23.7286 24.5 23.9956 24.3893 24.1926 24.1924C24.3895 23.9955 24.5001 23.7284 24.5001 23.45V16.59C24.4986 15.6958 24.3207 14.8107 23.9768 13.9853C23.6328 13.1599 23.1295 12.4104 22.4956 11.7797C21.8617 11.1491 21.1096 10.6496 20.2825 10.3099C19.4553 9.97018 18.5693 9.7969 17.6751 9.79997Z"/>
+                            <path d="M7.7 10.85H4.55C3.9701 10.85 3.5 11.3201 3.5 11.9V23.45C3.5 24.0299 3.9701 24.5 4.55 24.5H7.7C8.2799 24.5 8.75 24.0299 8.75 23.45V11.9C8.75 11.3201 8.2799 10.85 7.7 10.85Z"/>
+                            <path d="M6.125 8.75C7.57475 8.75 8.75 7.57475 8.75 6.125C8.75 4.67525 7.57475 3.5 6.125 3.5C4.67525 3.5 3.5 4.67525 3.5 6.125C3.5 7.57475 4.67525 8.75 6.125 8.75Z"/>
+                        </svg>
+                    </a>
+
+                    <a class="link" href="https://www.behance.net/erminiaspada">
+                        <svg class="icon-button" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M17.22 13.055C17.0575 13.0544 16.8967 13.0876 16.7479 13.1527C16.599 13.2178 16.4654 13.3133 16.3556 13.433C16.2457 13.5527 16.1621 13.694 16.1101 13.8479C16.058 14.0018 16.0387 14.1649 16.0533 14.3267H18.4567C18.4722 14.1588 18.4511 13.9896 18.395 13.8306C18.3388 13.6717 18.2489 13.5268 18.1313 13.4059C18.0138 13.2851 17.8715 13.1911 17.7141 13.1305C17.5568 13.07 17.3882 13.0442 17.22 13.055Z"/>
+                            <path d="M11.0717 14.35H9.63672V16.6133H10.8034C11.9701 16.6133 12.4834 16.2283 12.4834 15.4466C12.4834 14.665 11.9467 14.35 11.0717 14.35V14.35Z"/>
+                            <path d="M12.0867 12.2733C12.0867 11.655 11.6784 11.2816 10.9784 11.2816H9.63672V13.3116H10.6284C11.6667 13.3116 12.0867 12.9383 12.0867 12.2733Z"/>
+                            <path d="M13.9999 2.33337C11.6925 2.33337 9.43684 3.01761 7.51827 4.29956C5.5997 5.58151 4.10435 7.4036 3.22133 9.5354C2.33831 11.6672 2.10727 14.013 2.55743 16.2761C3.00759 18.5392 4.11873 20.618 5.75034 22.2496C7.38196 23.8812 9.46076 24.9924 11.7239 25.4425C13.987 25.8927 16.3328 25.6617 18.4646 24.7786C20.5964 23.8956 22.4185 22.4003 23.7004 20.4817C24.9824 18.5631 25.6666 16.3075 25.6666 14C25.6666 12.468 25.3648 10.9509 24.7785 9.5354C24.1922 8.11993 23.3329 6.83381 22.2495 5.75046C21.1662 4.66711 19.88 3.80775 18.4646 3.22145C17.0491 2.63514 15.532 2.33337 13.9999 2.33337V2.33337ZM11.3166 17.7334H8.16659V10.15H11.3166C12.6816 10.15 13.5799 10.8617 13.5799 12.0167C13.596 12.4047 13.4733 12.7858 13.2339 13.0915C12.9944 13.3973 12.6538 13.6077 12.2733 13.685C12.5144 13.6906 12.752 13.7454 12.9713 13.8459C13.1906 13.9465 13.387 14.0907 13.5487 14.2698C13.7103 14.4489 13.8337 14.6591 13.9113 14.8876C13.9889 15.116 14.019 15.3579 13.9999 15.5984C13.9999 16.9517 12.8333 17.7334 11.3166 17.7334ZM15.4583 10.7334H18.9583V11.3167H15.4583V10.7334ZM19.8333 15.225H15.9833V15.3884C15.9632 15.5657 15.9814 15.7452 16.0365 15.9148C16.0917 16.0845 16.1826 16.2404 16.3031 16.3719C16.4236 16.5035 16.571 16.6077 16.7351 16.6775C16.8993 16.7474 17.0766 16.7812 17.2549 16.7767C17.5053 16.8156 17.7614 16.7626 17.9758 16.6276C18.1902 16.4925 18.3486 16.2844 18.4216 16.0417H19.8333C19.7076 16.6017 19.3798 17.0958 18.9128 17.4294C18.4457 17.763 17.8721 17.9128 17.3016 17.85C16.937 17.8869 16.5687 17.8433 16.2227 17.7225C15.8767 17.6017 15.5613 17.4065 15.2989 17.1507C15.0364 16.895 14.8332 16.5848 14.7035 16.242C14.5738 15.8992 14.5208 15.5322 14.5483 15.1667V14.6534C14.5235 14.2993 14.5756 13.944 14.701 13.6119C14.8264 13.2798 15.0222 12.9787 15.2748 12.7294C15.5275 12.4801 15.8311 12.2883 16.1648 12.1673C16.4986 12.0463 16.8545 11.9989 17.2083 12.0284C17.5608 12.0058 17.9142 12.059 18.2445 12.1844C18.5748 12.3098 18.8744 12.5046 19.1231 12.7555C19.3718 13.0064 19.5639 13.3077 19.6864 13.6391C19.8089 13.9705 19.859 14.3243 19.8333 14.6767V15.225Z"/>
+                        </svg>
+                    </a>
                 </div>
-            </div>
-        </main>
-
-        <footer class="footer">
-            <div class="footer-right">
-                <span>Contatti</span>
-                <a class="link" href="mailto:erminia.spada7@gmail.com">
-                    <svg class="icon-button" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                        <path d="M22.1666 4.66663H5.83325C4.90499 4.66663 4.01476 5.03538 3.35838 5.69175C2.702 6.34813 2.33325 7.23837 2.33325 8.16663V19.8333C2.33325 20.7615 2.702 21.6518 3.35838 22.3082C4.01476 22.9645 4.90499 23.3333 5.83325 23.3333H22.1666C23.0948 23.3333 23.9851 22.9645 24.6415 22.3082C25.2978 21.6518 25.6666 20.7615 25.6666 19.8333V8.16663C25.6666 7.23837 25.2978 6.34813 24.6415 5.69175C23.9851 5.03538 23.0948 4.66663 22.1666 4.66663ZM22.1666 6.99996L14.5833 12.215C14.4059 12.3174 14.2047 12.3713 13.9999 12.3713C13.7951 12.3713 13.5939 12.3174 13.4166 12.215L5.83325 6.99996H22.1666Z"/>
-                    </svg>    
-                </a>
-                
-                <a class="link" href="https://www.linkedin.com/in/erminia-spada-82bb88142/">
-                    <svg class="icon-button" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                        <path d="M17.6751 9.79997C16.7809 9.7969 15.8949 9.97018 15.0677 10.3099C14.2406 10.6496 13.4885 11.1491 12.8546 11.7797C12.2207 12.4104 11.7174 13.1599 11.3734 13.9853C11.0295 14.8107 10.8516 15.6958 10.8501 16.59V23.45C10.8501 23.7284 10.9607 23.9955 11.1576 24.1924C11.3545 24.3893 11.6216 24.5 11.9001 24.5H14.3501C14.6286 24.5 14.8956 24.3893 15.0926 24.1924C15.2895 23.9955 15.4001 23.7284 15.4001 23.45V16.59C15.3999 16.2719 15.4667 15.9574 15.5961 15.6669C15.7256 15.3765 15.9148 15.1165 16.1515 14.9041C16.3882 14.6916 16.667 14.5314 16.9697 14.4339C17.2724 14.3365 17.5923 14.3039 17.9084 14.3383C18.4754 14.4097 18.9965 14.6867 19.3728 15.1168C19.7492 15.5469 19.9546 16.1002 19.9501 16.6716V23.45C19.9501 23.7284 20.0607 23.9955 20.2576 24.1924C20.4545 24.3893 20.7216 24.5 21.0001 24.5H23.4501C23.7286 24.5 23.9956 24.3893 24.1926 24.1924C24.3895 23.9955 24.5001 23.7284 24.5001 23.45V16.59C24.4986 15.6958 24.3207 14.8107 23.9768 13.9853C23.6328 13.1599 23.1295 12.4104 22.4956 11.7797C21.8617 11.1491 21.1096 10.6496 20.2825 10.3099C19.4553 9.97018 18.5693 9.7969 17.6751 9.79997Z"/>
-                        <path d="M7.7 10.85H4.55C3.9701 10.85 3.5 11.3201 3.5 11.9V23.45C3.5 24.0299 3.9701 24.5 4.55 24.5H7.7C8.2799 24.5 8.75 24.0299 8.75 23.45V11.9C8.75 11.3201 8.2799 10.85 7.7 10.85Z"/>
-                        <path d="M6.125 8.75C7.57475 8.75 8.75 7.57475 8.75 6.125C8.75 4.67525 7.57475 3.5 6.125 3.5C4.67525 3.5 3.5 4.67525 3.5 6.125C3.5 7.57475 4.67525 8.75 6.125 8.75Z"/>
-                    </svg>
-                </a>
-
-                <a class="link" href="https://www.behance.net/erminiaspada">
-                    <svg class="icon-button" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                        <path d="M17.22 13.055C17.0575 13.0544 16.8967 13.0876 16.7479 13.1527C16.599 13.2178 16.4654 13.3133 16.3556 13.433C16.2457 13.5527 16.1621 13.694 16.1101 13.8479C16.058 14.0018 16.0387 14.1649 16.0533 14.3267H18.4567C18.4722 14.1588 18.4511 13.9896 18.395 13.8306C18.3388 13.6717 18.2489 13.5268 18.1313 13.4059C18.0138 13.2851 17.8715 13.1911 17.7141 13.1305C17.5568 13.07 17.3882 13.0442 17.22 13.055Z"/>
-                        <path d="M11.0717 14.35H9.63672V16.6133H10.8034C11.9701 16.6133 12.4834 16.2283 12.4834 15.4466C12.4834 14.665 11.9467 14.35 11.0717 14.35V14.35Z"/>
-                        <path d="M12.0867 12.2733C12.0867 11.655 11.6784 11.2816 10.9784 11.2816H9.63672V13.3116H10.6284C11.6667 13.3116 12.0867 12.9383 12.0867 12.2733Z"/>
-                        <path d="M13.9999 2.33337C11.6925 2.33337 9.43684 3.01761 7.51827 4.29956C5.5997 5.58151 4.10435 7.4036 3.22133 9.5354C2.33831 11.6672 2.10727 14.013 2.55743 16.2761C3.00759 18.5392 4.11873 20.618 5.75034 22.2496C7.38196 23.8812 9.46076 24.9924 11.7239 25.4425C13.987 25.8927 16.3328 25.6617 18.4646 24.7786C20.5964 23.8956 22.4185 22.4003 23.7004 20.4817C24.9824 18.5631 25.6666 16.3075 25.6666 14C25.6666 12.468 25.3648 10.9509 24.7785 9.5354C24.1922 8.11993 23.3329 6.83381 22.2495 5.75046C21.1662 4.66711 19.88 3.80775 18.4646 3.22145C17.0491 2.63514 15.532 2.33337 13.9999 2.33337V2.33337ZM11.3166 17.7334H8.16659V10.15H11.3166C12.6816 10.15 13.5799 10.8617 13.5799 12.0167C13.596 12.4047 13.4733 12.7858 13.2339 13.0915C12.9944 13.3973 12.6538 13.6077 12.2733 13.685C12.5144 13.6906 12.752 13.7454 12.9713 13.8459C13.1906 13.9465 13.387 14.0907 13.5487 14.2698C13.7103 14.4489 13.8337 14.6591 13.9113 14.8876C13.9889 15.116 14.019 15.3579 13.9999 15.5984C13.9999 16.9517 12.8333 17.7334 11.3166 17.7334ZM15.4583 10.7334H18.9583V11.3167H15.4583V10.7334ZM19.8333 15.225H15.9833V15.3884C15.9632 15.5657 15.9814 15.7452 16.0365 15.9148C16.0917 16.0845 16.1826 16.2404 16.3031 16.3719C16.4236 16.5035 16.571 16.6077 16.7351 16.6775C16.8993 16.7474 17.0766 16.7812 17.2549 16.7767C17.5053 16.8156 17.7614 16.7626 17.9758 16.6276C18.1902 16.4925 18.3486 16.2844 18.4216 16.0417H19.8333C19.7076 16.6017 19.3798 17.0958 18.9128 17.4294C18.4457 17.763 17.8721 17.9128 17.3016 17.85C16.937 17.8869 16.5687 17.8433 16.2227 17.7225C15.8767 17.6017 15.5613 17.4065 15.2989 17.1507C15.0364 16.895 14.8332 16.5848 14.7035 16.242C14.5738 15.8992 14.5208 15.5322 14.5483 15.1667V14.6534C14.5235 14.2993 14.5756 13.944 14.701 13.6119C14.8264 13.2798 15.0222 12.9787 15.2748 12.7294C15.5275 12.4801 15.8311 12.2883 16.1648 12.1673C16.4986 12.0463 16.8545 11.9989 17.2083 12.0284C17.5608 12.0058 17.9142 12.059 18.2445 12.1844C18.5748 12.3098 18.8744 12.5046 19.1231 12.7555C19.3718 13.0064 19.5639 13.3077 19.6864 13.6391C19.8089 13.9705 19.859 14.3243 19.8333 14.6767V15.225Z"/>
-                    </svg>
-                </a>
-            </div>
-        </footer>
-
-        <!--
-            <a class="fab">
-                <svg width="52" height="48" viewBox="0 0 52 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.98741 13.2336C10.9214 10.4194 12.8235 5.57509 15.2941 2.82083C15.8631 2.18654 16.8357 2.2417 17.392 2.88697C18.8736 4.60564 20.8207 7.33235 23.2333 11.4105C24.4447 11.4942 25.6754 11.6392 26.9182 11.8479C29.294 8.0125 34.4131 1.56908 39.7354 0.299557C39.8078 0.282287 39.8902 0.261123 39.9799 0.238102C40.6505 0.0659779 41.7253 -0.209927 42.0087 0.262074C43.5132 2.76795 45.0895 8.2813 44.5539 19.7319C50.2549 24.5638 53.1419 30.7784 51.5791 36.5125C49.0194 45.9041 35.4922 50.4504 21.3653 46.667C7.23844 42.8835 -2.13863 32.203 0.421061 22.8114C1.60512 18.4671 5.13597 15.1595 9.98741 13.2336Z" fill="#E4A8FE"/>
-                    <g clip-path="url(#clip0_415_3250)">
-                    <path d="M19.18 26.64C19.264 26.7412 19.3671 26.8249 19.4834 26.8863C19.5997 26.9476 19.7271 26.9854 19.858 26.9975C19.989 27.0096 20.1211 26.9957 20.2467 26.9567C20.3723 26.9176 20.489 26.8542 20.59 26.77L24.95 23.14V35C24.95 35.2652 25.0554 35.5195 25.2429 35.7071C25.4304 35.8946 25.6848 36 25.95 36C26.2152 36 26.4696 35.8946 26.6571 35.7071C26.8446 35.5195 26.95 35.2652 26.95 35V23.14L31.31 26.77C31.4111 26.854 31.5278 26.9173 31.6534 26.9563C31.779 26.9952 31.911 27.0091 32.0419 26.997C32.1729 26.9849 32.3001 26.9472 32.4165 26.8859C32.5328 26.8247 32.636 26.7411 32.72 26.64C32.804 26.5389 32.8674 26.4222 32.9063 26.2966C32.9453 26.171 32.9591 26.039 32.947 25.9081C32.935 25.7771 32.8972 25.6499 32.836 25.5335C32.7747 25.4172 32.6911 25.314 32.59 25.23L26.59 20.23L26.44 20.14L26.31 20.07C26.0783 19.9806 25.8217 19.9806 25.59 20.07L25.46 20.14L25.31 20.23L19.31 25.23C19.2087 25.3139 19.125 25.417 19.0637 25.5334C19.0023 25.6497 18.9645 25.777 18.9525 25.908C18.9404 26.039 18.9543 26.1711 18.9933 26.2967C19.0324 26.4223 19.0958 26.5389 19.18 26.64Z" fill="#2C1E40"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_415_3250">
-                    <rect width="24" height="24" fill="white" transform="translate(13.95 16)"/>
-                    </clipPath>
-                    </defs>
-                </svg>   
-            </a>
-        -->
+            </footer>
+        </div>
     </body>
 </html>

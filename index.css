@@ -13,8 +13,16 @@
   --white: rgba(255, 255, 255, 0.87);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  /*margin: 0 30px 24px 30px;*/
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -24,6 +32,15 @@ body {
   font-weight: 400;
   color: var(--white);
   background-color: #2C1E40;
+  width: 100%;
+}
+
+main {
+  display: grid;
+}
+
+.wrapper {
+  display: grid;
 }
 
 h1 {
@@ -198,6 +215,7 @@ a {
 .title-section {
   margin: 0;
   text-align: center;
+  align-self: stretch;
 }
 
 .subtitle {
@@ -212,10 +230,11 @@ a {
 
 .header {
   display: flex;
-  flex-direction: row;
-  margin: 8px 30px 24px 30px;
-  overflow: hidden;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  padding: 8px 30px 24px 30px;
+  overflow: hidden;
 }
 
 .header a {
@@ -223,6 +242,9 @@ a {
 }
   
 .header-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
   margin-left: auto;
 }
   
@@ -245,13 +267,15 @@ a {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .canva__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
-  gap: 10px;
+  gap: 20px;
 }
 
 .canva__blur {
@@ -289,14 +313,25 @@ a {
 
 .myworks {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  align-self: stretch;
 }
 
 .card {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  align-self: stretch;
+  padding: 16px;
+  gap: 10px;
+}
+
+.card h5 {
+  margin: 0;
 }
 
 .card:hover {
@@ -324,19 +359,15 @@ a {
 }
 
 .card-title-container {
-  position: relative;
-  bottom: 100px;
-  width: 650px;
-  height: 64px;
-  padding: 16px;
-  margin: 16px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 12px;
+  align-self: stretch;
+  padding: 16px;
   background-color: var(--milky-way);
   box-sizing: border-box;
-  display: flex;
   opacity: 0;
   transition : ease-out .3s;
   -wekit-transition : ease-out .3s;
@@ -369,6 +400,9 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 16px;
+  align-self: stretch;
+  width: 100%;
+  padding: 0 30px 0 30px;
 }
 
 .container-cards-column {
@@ -381,8 +415,9 @@ a {
 .about {
   display: flex;
   flex-direction: column;
-  margin: 160px 30px 160px 30px;
+  padding: 160px 30px 160px 30px;
   gap: 40px;
+  width: 100%;
 }
 
 .about__row {
@@ -392,6 +427,10 @@ a {
   justify-content: center;
   align-items: center;
   z-index: 1;
+}
+
+.about__picture img {
+  width: 100%;
 }
 
 .about__picture-square {
@@ -441,6 +480,7 @@ a {
   align-items: flex-start;
   gap: 82px;
   background: var(--moon);
+  width: 100%;
 }
 
 .contacts__paws {
@@ -472,7 +512,8 @@ a {
 .footer {
   display: flex;
   flex-direction: column;
-  margin: 24px 30px 24px 30px;
+  padding: 24px 30px 24px 30px;
+  width: 100%;
 }
 
 .footer-right {
