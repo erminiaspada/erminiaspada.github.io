@@ -11,6 +11,10 @@
   --primary-hover: rgba(85, 64, 116, 1);
   --primary-pressed: rgba(54, 38, 78, 1);
   --white: rgba(255, 255, 255, 0.87);
+
+  --screen-mobile: 660px;
+  --screen-tablet: 768px;
+  --screen-desktop: 1024px;
 }
 
 * {
@@ -50,9 +54,25 @@ h1 {
   line-height: normal;
 }
 
+@media screen and (max-width: 660px) {
+  h1 {
+    font-size: 59px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 64px;
+  }
+}
+
 h2 {
   font-size: 49px;
   font-weight: 900;
+}
+
+@media screen and (max-width: 660px) {
+  h2 {
+    font-size: 39px;
+    font-weight: 900;
+  }
 }
 
 h3 {
@@ -77,6 +97,12 @@ h6 {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .visible-mobile {
+    display: none;
+  }
 }
 
 .link {
@@ -191,6 +217,8 @@ a {
   align-items: center;
   gap: 10px;
   fill: var(--nebulosa);
+  width: 40px;
+  height: 40px;
 }
 
 .icon-button:hover {
@@ -278,6 +306,12 @@ a {
   gap: 20px;
 }
 
+@media screen and (max-width: 660px) {
+  .canva__container {
+    align-items: center;
+  }
+}
+
 .canva__blur {
   background-image: url(assets/desk_top_blur.png);
   background-position: right bottom;
@@ -298,6 +332,14 @@ a {
   align-items: flex-start;
 }
 
+@media screen and (max-width: 660px) {
+  .canva__container-text {
+   gap: 40px;
+   align-items: center;
+   order: 2;
+  }
+}
+
 .canva h1 {
   margin-bottom: -32px;
   margin-top: 0;
@@ -309,6 +351,23 @@ a {
   font-weight: 500;
   margin: 0;
   line-height: normal;
+}
+
+@media screen and (max-width: 660px) {
+  .canva__subtitle {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .canva__image {
+    order: 1;
+    width: 180px;
+  }
+
+  .canva__image img {
+    width: 180px;
+  }
 }
 
 .myworks {
@@ -433,6 +492,13 @@ a {
   z-index: 1;
 }
 
+@media screen and (max-width: 660px) {
+  .about__row {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
 .about__picture img {
   width: 100%;
 }
@@ -446,6 +512,13 @@ a {
 
 .about__text {
   width: 566px;
+}
+
+@media screen and (max-width: 660px) {
+  .about__text {
+    width: unset;
+    align-self: stretch;
+  }
 }
 
 .about__text--pink {
