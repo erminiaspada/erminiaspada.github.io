@@ -70,7 +70,7 @@ h2 {
 
 @media screen and (max-width: 660px) {
   h2 {
-    font-size: 39px;
+    font-size: 31px;
     font-weight: 900;
   }
 }
@@ -88,6 +88,13 @@ h4 {
 h5 {
   font-size: 25px;
   font-weight: 900;
+}
+
+@media screen and (max-width: 660px) {
+  h5 {
+    font-size: 20px;
+    font-weight: 900;
+  }
 }
 
 h6 {
@@ -135,14 +142,13 @@ a {
   align-items: center;
   gap: 12px;
   margin: 0 !important;
-  padding: 8px 12px 8px 12px;
+  padding: 8px 16px 8px 16px;
 }
 
 .button--contained-dark-sky {
   display: inline-flex;
   color: var(--nebulosa);
   background-color: var(--dark-sky);
-  width: 216px;
 }
 
 .button--contained-dark-sky:hover {
@@ -187,7 +193,6 @@ a {
   display: inline-flex;
   color: var(--nebulosa);
   border: 3px solid var(--nebulosa);
-  width: 216px;
   justify-content: center;
   align-items: center;
 }
@@ -272,10 +277,9 @@ a {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 28px;
   margin-left: auto;
 }
-  
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
@@ -288,6 +292,13 @@ a {
   }
 }
 
+@media screen and (max-width: 660px) {
+  .logo {
+    width: 86px;
+    height: 32px;
+  }
+}
+
 .canva {
   padding: 88px 0 160px 0;
   display: flex;
@@ -297,6 +308,13 @@ a {
   gap: 20px;
   width: 100%;
 }
+
+@media screen and (max-width: 660px) {
+  .canva {
+    padding: 80px 0 130px 0;
+  }
+}
+
 
 .canva__container {
   display: flex;
@@ -343,6 +361,7 @@ a {
 .canva h1 {
   margin-bottom: -32px;
   margin-top: 0;
+  text-align: center;
 }
 
 .canva__subtitle {
@@ -351,6 +370,7 @@ a {
   font-weight: 500;
   margin: 0;
   line-height: normal;
+  text-align: center;
 }
 
 @media screen and (max-width: 660px) {
@@ -412,9 +432,22 @@ a {
   border: 3px solid var(--nebulosa);
 }
 
+@media screen and (max-width: 660px) {
+  .card--long {
+    height: 502px;
+  }
+}
+
 .card--short {
   height: 430px;
   border: 3px solid var(--nebulosa);
+}
+
+@media screen and (max-width: 660px) {
+  .card--short {
+    height: 302px;
+    order: 2;
+  }
 }
 
 .card-title-container {
@@ -432,8 +465,16 @@ a {
   box-sizing: border-box;
   opacity: 0;
   transition : ease-out .3s;
-  -wekit-transition : ease-out .3s;
+  -webkit-transition : ease-out .3s;
   -moz-transition : ease-out .3s;
+}
+
+@media screen and (max-width: 660px) {
+  .card-title-container {
+    opacity: unset;
+    padding: 8px 12px;
+    bottom: 84px;
+  }
 }
     
 /* Animazione con ease-out */
@@ -467,6 +508,14 @@ a {
   padding: 0 30px 0 30px;
 }
 
+@media screen and (max-width: 660px) {
+  .container-cards-row {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 0 16px;
+  }
+}
+
 .container-cards-column {
   display: flex;
   flex-direction: column;
@@ -481,6 +530,12 @@ a {
   padding: 160px 30px 160px 30px;
   gap: 40px;
   width: 100%;
+}
+
+@media screen and (max-width: 660px) {
+  .about {
+    padding: 130px 16px 130px 16px;
+  }
 }
 
 .about__row {
@@ -560,10 +615,11 @@ a {
   width: 100%;
 }
 
-.contacts__paws {
-  display: flex;
-  padding: 0px 0px 0px 0px;
-  align-items: center;
+@media screen and (max-width: 660px) {
+  .contacts {
+    padding-top: 144px;
+    gap: unset;
+  }
 }
 
 .contacts__container {
@@ -575,6 +631,11 @@ a {
   align-self: stretch;
 }
 
+@media screen and (max-width: 660px) {
+  .contacts__container {
+    padding-bottom: 48px;
+  }
+}
 
 .contacts__container-text {
   color: var(--milky-way);
@@ -582,8 +643,28 @@ a {
   margin: 0;
 }
 
+@media screen and (max-width: 660px) {
+  .contacts__container-text {
+      font-size: 31px;
+      font-weight: 900;
+  }
+}
+
 .contacts__container-text--blue {
   color: var(--dark-sky);
+}
+
+.contacts__paws {
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  align-items: center;
+}
+
+@media screen and (max-width: 660px) {
+  .contacts__paws img {
+      width: 180px;
+      height: 96px;
+  }
 }
 
 .footer {
@@ -591,6 +672,12 @@ a {
   flex-direction: column;
   padding: 24px 30px 24px 30px;
   width: 100%;
+}
+
+@media screen and (max-width: 660px) {
+  .footer {
+    padding: 24px 16px 24px 16px;
+  }
 }
 
 .footer-right {
