@@ -397,6 +397,13 @@ a {
   align-items: center;
   gap: 40px;
   align-self: stretch;
+  padding: 0px 30px 0px 30px;
+}
+
+@media screen and (max-width: 660px) {
+  .myworks {
+    padding: 0px 16px 0px 16px;
+  }
 }
 
 .card {
@@ -503,16 +510,14 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  align-self: stretch;
   width: 100%;
-  padding: 0 30px 0 30px;
+  max-width: 1380px;
 }
 
 @media screen and (max-width: 660px) {
   .container-cards-row {
     display: flex;
     flex-direction: column;
-    padding: 0 16px 0 16px;
   }
 }
 
