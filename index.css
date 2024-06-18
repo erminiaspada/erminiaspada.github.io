@@ -183,12 +183,6 @@ a {
   background-color: var(--saturn);
 }
 
-.button--contained-nebulosa:disabled {
-  opacity: 0.48;
-  color: var(--dark-sky);
-  background-color: var(--nebulosa);
-}
-
 .button--outlined {
   display: inline-flex;
   color: var(--nebulosa);
@@ -337,7 +331,50 @@ a {
 }
 
 @media screen and (max-width: 660px) {
-  /** hamburger menu-start */
+  .menu a:nth-child(1) {
+    display: none;
+  }
+
+  .menu a:nth-child(2) {
+    display: none;
+  }
+
+  .menu a:nth-child(4) {
+    display: none;
+  }
+
+  .menu #cv {
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0 !important;
+    padding: 8px 16px 8px 16px;
+    display: inline-flex;
+    color: var(--dark-sky);
+    background-color: var(--nebulosa);
+  }
+    
+  .menu #cv:hover {
+      color: var(--dark-sky);
+      background-color: var(--milky-way);
+  }
+    
+  .menu #cv:active {
+      color: var(--white);
+      background-color: var(--saturn);
+  }
+
+  .menu #cv:disabled {
+    opacity: 0.38;
+    color: var(--nebulosa);
+    background-color: var(--dark-sky);
+  }
+}
+
+/*
+@media screen and (max-width: 660px) {
   #menuToggle {
     display: block;
     z-index: 1;
@@ -432,8 +469,8 @@ a {
     align-items: flex-end;
     gap: 16px;
   }
-  /** hamburger menu-end */
 }
+*/
 
 
 .canva__container {
