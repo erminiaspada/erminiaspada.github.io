@@ -132,7 +132,7 @@ a {
 }
 
 .link:disabled {
-  color: (228, 168, 254, 0.38);
+  color: rgba(228, 168, 254, 0.38);
 }
 
 .button {
@@ -567,6 +567,20 @@ a {
   align-items: center;
   align-self: stretch;
   gap: 10px;
+  position: relative;
+}
+
+.card::after {
+  opacity: 0.20;
+  background: var(--primary-hover);
+  filter: blur(50px);
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .card h5 {
@@ -580,57 +594,58 @@ a {
 }
 
 .card:hover {
-  border: 3px solid var(--milky-way);
+  border: 3px solid var(--white);
   animation-timing-function: ease-out;
   animation-duration: 300ms;
 }
 
 .card:active {
-  border: 3px solid var(--saturn);
+  border: 3px solid var(--milky-way);
   animation-timing-function: ease-out;
   animation-duration: 300ms;
 }
 
 .card--long {
   height: 548px;
-  border: 3px solid var(--nebulosa);
+  border: 3px solid var(--white);
 }
 
 @media screen and (max-width: 660px) {
   .card--long {
-    height: 502px;
+    height: 302px;
   }
 }
 
 .card--short {
   height: 430px;
-  border: 3px solid var(--nebulosa);
+  border: 3px solid var(--white);
 }
 
 @media screen and (max-width: 660px) {
   .card--short {
     height: 302px;
-    order: 2;
+    /*order: 2;*/
   }
 }
 
 .card-title-container {
   position: relative;
-  bottom: 108px;
+  bottom: 94px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 12px;
   align-self: stretch;
-  padding: 16px;
+  padding: 8px 12px;
   margin: 16px;
-  background-color: var(--milky-way);
+  background-color: var(--white);
   box-sizing: border-box;
   opacity: 0;
   transition : ease-out .3s;
   -webkit-transition : ease-out .3s;
   -moz-transition : ease-out .3s;
+  z-index: 2;
 }
 
 @media screen and (max-width: 660px) {
@@ -660,7 +675,7 @@ a {
   animation: cardTitleAnimation 0.3s ease-out;
   opacity: 1;
   color: var(--white);
-  background-color: var(--saturn);
+  background-color: var(--milky-way);
 }
 
 .container-cards-row {
