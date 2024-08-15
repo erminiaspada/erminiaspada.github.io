@@ -651,9 +651,10 @@ a {
 
 @media screen and (max-width: 660px) {
   .card-title-container {
-    opacity: unset;
+    display: none;
+    /* opacity: unset;
     padding: 8px 12px;
-    bottom: 84px;
+    bottom: 84px; */
   }
 }
     
