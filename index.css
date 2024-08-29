@@ -572,7 +572,7 @@ a {
 
 .card::after {
   opacity: 0.20;
-  background: var(--primary-hover);
+  /* background: var(--primary-hover); */
   filter: blur(50px);
   content: "";
   z-index: 1;
@@ -601,14 +601,14 @@ a {
 }
 
 .card:active {
-  border: 3px solid var(--milky-way);
+  border: 3px solid var(--nebulosa);
   animation-timing-function: ease-out;
   animation-duration: 300ms;
 }
 
 .card--long {
   height: 548px;
-  border: 3px solid var(--white);
+  /* border: 3px solid var(--white); */
 }
 
 @media screen and (max-width: 660px) {
@@ -619,7 +619,7 @@ a {
 
 .card--short {
   height: 430px;
-  border: 3px solid var(--white);
+  /* border: 3px solid var(--white); */
 }
 
 @media screen and (max-width: 660px) {
@@ -629,7 +629,7 @@ a {
   }
 }
 
-.card-title-container {
+/* .card-title-container {
   position: relative;
   bottom: 94px;
   display: flex;
@@ -647,16 +647,16 @@ a {
   -webkit-transition : ease-out .3s;
   -moz-transition : ease-out .3s;
   z-index: 2;
-}
+} +/
 
 @media screen and (max-width: 660px) {
   .card-title-container {
     display: none;
     /* opacity: unset;
     padding: 8px 12px;
-    bottom: 84px; */
+    bottom: 84px;
   }
-}
+} */
     
 /* Animazione con ease-out */
 @keyframes cardTitleAnimation {
@@ -668,7 +668,7 @@ a {
   }
 }
 
-.card:hover .card-title-container {
+/* .card:hover .card-title-container {
   animation: cardTitleAnimation 0.3s ease-out;
   opacity: 1;
 }
@@ -678,7 +678,7 @@ a {
   opacity: 1;
   color: var(--white);
   background-color: var(--milky-way);
-}
+} */
 
 .container-cards-row {
   display: flex;
