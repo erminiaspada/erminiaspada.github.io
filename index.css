@@ -557,6 +557,12 @@ a {
   height: 100%;
 }
 
+.canva__draw-area .button--contained-dark-sky {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
 .canva h1 {
   max-width: 1146;
   flex: 1 0 0;
@@ -1188,6 +1194,12 @@ a {
     align-self: stretch;
     grid-row: 4 / span 2;
     grid-column: 1 / span 1;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .about__picture_container {
+    height: 400px;
   }
 }
 
