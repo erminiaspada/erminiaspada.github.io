@@ -47,7 +47,7 @@
                         <div class="canva__boxes">
                             <div class="canva__big-box">
                                 <div class="canva__draw-area"></div>
-                                <img alt="cat_pink" src="assets/cat_pink.svg" srcset="assets/cat_pink.svg">
+                                    <a class="link button button--contained-dark-sky" href="#">Blast off!</a>
                                 <div class="canva__caption">
                                     <div class="canva__caption-text">
                                         <h4>Draw me something<br>(Maybe not that thing)</h4>
@@ -55,15 +55,18 @@
                                     <img alt="arrow_pink" src="assets/arrow_pink.svg" srcset="assets/arrow_pink.svg">
                                 </div>
                             </div>
-                            <div class="canva__medium-box">
-                                <div class="canva__image">
-                                    <img alt="Space Cat Image" src="assets/cat_illustration.svg" srcset="assets/cat_illustration.svg">
+                            <div class="canva__medium-small-boxes">
+                                <div class="canva__medium-box">
+                                    <div class="canva__image">
+                                        <img alt="Space Cat Image" src="assets/cat_illustration.svg" srcset="assets/cat_illustration.svg">
+                                    </div>
+                                </div>
+                                <div class="canva__small-boxes">
+                                    <div class="canva__small-box"></div>
+                                    <div class="canva__small-box"></div>
                                 </div>
                             </div>
-                            <div class="canva__small-boxes">
-                                <div class="canva__small-box"></div>
-                                <div class="canva__small-box"></div>
-                            </div>
+                            
                         </div>
                     </div>
                 </section>
@@ -72,7 +75,7 @@
                     <h3 class="title-section">Works</h3>
                         <div class="container-cards">
                             <a class="card card--large_1" href="https://www.behance.net/gallery/201202937/Mojito-DS" target="_blank">
-                                <picture>
+                                <picture class="card__picture">
                                     <source media="(max-width:660px)" srcset="assets/mojito_cover_mobile.webp">
                                     <img src="assets/mojito_cover_desktop.webp" alt="Mojito Design System">
                                 </picture>
@@ -82,25 +85,25 @@
                             <a class="card card--long_3" href="" target="_blank">
                             </a>
                             <a class="card card--long_4" href="https://www.behance.net/gallery/143147859/Brand-Identity-Pof" target="_blank">
-                                <picture>
+                                <picture class="card__picture">
                                     <source media="(max-width:660px)" srcset="assets/pof_cover_desktop.webp">
                                     <img src="assets/pof_cover_desktop.webp" alt="Pof Brand Identity">
                                 </picture>
                             </a>
                             <a class="card card--large_5" href="https://www.behance.net/gallery/205558787/Spaghetti-startups" target="_blank">
-                                <picture>
+                                <picture class="card__picture">
                                     <source media="(max-width:660px)" srcset="assets/spaghetti_cover_mobile.webp">
                                     <img src="assets/spaghetti_cover_desktop.webp" alt="Spaghetti-Startups">
                                 </picture>
                             </a>
                             <a class="card card--large_6" href="" target="_blank">
-                                <picture>
-                                    <source media="(max-width:660px)" srcset="assets/abracadabrah_cover_desktop">
+                                <picture class="card__picture">
+                                    <source media="(max-width:660px)" srcset="assets/abracadabrah_cover_mobile.webp">
                                     <img src="assets/abracadabrah_cover_desktop.webp" alt="Abracadabrah">
                                 </picture>
                             </a>
                             <a class="card card--regular_7" href="" target="_blank">
-                                <picture>
+                                <picture class="card__picture">
                                     <source media="(max-width:660px)" srcset="assets/peggyAI-cover-mobile.webp">
                                     <img src="assets/peggyAI_cover_desktop.webp" alt="Peggy-AI">
                                 </picture>
@@ -108,7 +111,7 @@
                             <a class="card card--regular_8" href="" target="_blank">
                             </a>
                             <a class="card card--large_9" href="https://www.behance.net/gallery/153160461/Alpro-Redesig" target="_blank">
-                                <picture>
+                                <picture class="card__picture">
                                     <source media="(max-width:660px)" srcset="assets/alpro_cover_mobile.webp">
                                     <img src="assets/alpro_cover_dektop.webp" alt="Alpro-Redesign">
                                 </picture>
@@ -283,6 +286,103 @@
                     </p>
                 </div>
             </footer>
+
+            <!--
+            <script>
+                (function(){
+                const container = document.querySelector('.canva__draw-area');
+                const canvas = document.createElement('canvas');
+                container.appendChild(canvas);
+                const ctx = canvas.getContext('2d');
+
+                let isDrawing = false;
+                let last = {x:0,y:0};
+                let strokeColor = '#000';
+                let strokeSize = 4;
+
+                function resizeCanvas() {
+                    //const rect = container.getBoundingClientRect();
+                    //canvas.width = rect.width * window.devicePixelRatio;
+                    //canvas.height = rect.height * window.devicePixelRatio;
+                    //canvas.style.width = rect.width + 'px';
+                    //canvas.style.height = rect.height + 'px';
+                    canvas.style.width = '100%';
+                    canvas.style.height = '100%';
+                    ctx.setTransform(window.devicePixelRatio,0,0,window.devicePixelRatio,0,0);
+                    ctx.fillStyle = '#fff';
+                    ctx.fillRect(0,0,canvas.width,canvas.height); // sfondo bianco
+                }
+
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+
+                function getPos(e){
+                    const rect = canvas.getBoundingClientRect();
+                    return {
+                    x: (e.clientX - rect.left),
+                    y: (e.clientY - rect.top)
+                    };
+                }
+
+                function startDraw(e){
+                    isDrawing = true;
+                    const p = getPos(e);
+                    last = p;
+                    drawDot(p.x,p.y);
+                }
+                function draw(e){
+                    if(!isDrawing) return;
+                    const p = getPos(e);
+                    ctx.strokeStyle = strokeColor;
+                    ctx.lineWidth = strokeSize;
+                    ctx.lineCap = 'round';
+                    ctx.beginPath();
+                    ctx.moveTo(last.x,last.y);
+                    ctx.lineTo(p.x,p.y);
+                    ctx.stroke();
+                    last = p;
+                }
+                function endDraw(){ isDrawing=false; }
+
+                function drawDot(x,y){
+                    ctx.fillStyle = strokeColor;
+                    ctx.beginPath();
+                    ctx.arc(x,y,strokeSize/2,0,Math.PI*2);
+                    ctx.fill();
+                }
+
+                canvas.addEventListener('mousedown', startDraw);
+                canvas.addEventListener('mousemove', draw);
+                window.addEventListener('mouseup', endDraw);
+
+                canvas.addEventListener('touchstart', (e)=>{ e.preventDefault(); startDraw(e.touches[0]); });
+                canvas.addEventListener('touchmove', (e)=>{ e.preventDefault(); draw(e.touches[0]); });
+                canvas.addEventListener('touchend', endDraw);
+
+                // --- Funzioni utili ---
+                window.downloadDrawing = function(){
+                    canvas.toBlob(blob=>{
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'disegno.png';
+                    a.click();
+                    URL.revokeObjectURL(url);
+                    });
+                }
+
+                window.sendDrawing = async function(){
+                    const blob = await new Promise(res=>canvas.toBlob(res,'image/png'));
+                    const fd = new FormData();
+                    fd.append('file', blob, 'disegno.png');
+                    const res = await fetch('/upload',{method:'POST',body:fd});
+                    const json = await res.json();
+                    console.log('Risposta server:', json);
+                }
+                })();
+            </script>
+            -->
+
         </div>
     </body>
 </html>
