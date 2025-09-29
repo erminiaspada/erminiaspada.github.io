@@ -19,7 +19,7 @@
         canvas.style.height = '100%';
         ctx.setTransform(window.devicePixelRatio,0,0,window.devicePixelRatio,0,0);
         ctx.fillStyle = '#fff';
-        ctx.fillRect(0,0,canvas.width,canvas.height); // sfondo bianco
+        ctx.fillRect(0,0,canvas.width,canvas.height);
     }
 
     window.addEventListener('resize', resizeCanvas);
@@ -108,15 +108,15 @@
             });
 
             if(res.ok){
-                alert("Email inviata con successo 🎉");
+                alert("Shooted! 🔫");
             } else {
                 const err = await res.text();
                 console.error("Errore:", err);
-                alert("Errore durante l'invio dell'email");
+                alert("Gremlin attack: please try again 💦");
             }
         } catch(e){
             console.error("Exception:", e);
-            alert("Eccezione durante l'invio");
+            alert("Gremlin attack: please try again 💦");
         }
     }
 })();
