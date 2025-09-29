@@ -4,7 +4,7 @@
 :root {
   --nebulosa: rgb(240, 204, 255);
   --milky-way: rgba(249, 235, 255, 1);
-  --saturn: rgba(61, 0, 147, 1);
+  --saturn: rgb(61, 0, 147);
   --moon: rgba(217, 4, 121, 1);
   --eclipse: rgba(244, 85, 172, 1);
   --dark-side: rgba(185, 0, 92, 1);
@@ -500,7 +500,6 @@ a {
   }
 }
 */
-
 
 .canva__container {
   display: flex;
