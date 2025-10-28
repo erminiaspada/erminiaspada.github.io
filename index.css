@@ -359,7 +359,7 @@ a {
 @media screen and (max-width: 834px) {
   .canva {
     margin-bottom: 280px;
-    margin-top: 72px;
+    margin-top: 64px;
   }
 }
 
@@ -553,8 +553,11 @@ a {
 
 @media screen and (max-width: 1280px) {
   .canva__container-text {
-   gap: 24px;
-   align-self: stretch;
+    gap: 8px;
+    align-self: stretch;
+    background: var(--saturn);
+    border-radius: 20px;
+    padding: 24px;
   }
 }
 
@@ -593,7 +596,7 @@ a {
     margin-bottom: 4px;
     font-size: 65px;
     font-weight: 900;
-    line-height: 98px;
+    line-height: 80px;
     text-align: left;
   }
 }
@@ -612,8 +615,8 @@ a {
 
 @media screen and (max-width: 834px) {
   .canva__subtitle {
-    font-size: 48px;
-    line-height: 72px;
+    font-size: 24px;
+    line-height: 48px;
     text-align: left;
   }
 }
