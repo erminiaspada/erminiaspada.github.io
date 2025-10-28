@@ -351,7 +351,7 @@ a {
 
 @media screen and (max-width: 1280px) {
   .canva {
-    padding: 0;
+    padding: 0px 16px 0px 16px;
     gap: 24px;
   }
 }
@@ -1124,7 +1124,7 @@ a {
 .about__picture_container {
   justify-content: center;
   align-items: center;
-  grid-row: 1 / span 1;
+  grid-row: 1 / -1;
   grid-column: 1 / span 1;
   border-radius: 12px;
 }
@@ -1143,6 +1143,12 @@ a {
   .about__picture_container {
     height: 400px;
   }
+}
+
+.about__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about__picture img {
