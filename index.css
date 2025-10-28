@@ -351,7 +351,7 @@ a {
 
 @media screen and (max-width: 1280px) {
   .canva {
-    padding: 0;
+    padding: 0px 16px 0px 16px;
     gap: 24px;
   }
 }
@@ -359,7 +359,7 @@ a {
 @media screen and (max-width: 834px) {
   .canva {
     margin-bottom: 280px;
-    margin-top: 72px;
+    margin-top: 64px;
   }
 }
 
@@ -553,8 +553,11 @@ a {
 
 @media screen and (max-width: 1280px) {
   .canva__container-text {
-   gap: 24px;
-   align-self: stretch;
+    gap: 8px;
+    align-self: stretch;
+    background: var(--saturn);
+    border-radius: 20px;
+    padding: 24px;
   }
 }
 
@@ -593,7 +596,7 @@ a {
     margin-bottom: 4px;
     font-size: 65px;
     font-weight: 900;
-    line-height: 98px;
+    line-height: 80px;
     text-align: left;
   }
 }
@@ -612,8 +615,8 @@ a {
 
 @media screen and (max-width: 834px) {
   .canva__subtitle {
-    font-size: 48px;
-    line-height: 72px;
+    font-size: 24px;
+    line-height: 48px;
     text-align: left;
   }
 }
@@ -1124,7 +1127,7 @@ a {
 .about__picture_container {
   justify-content: center;
   align-items: center;
-  grid-row: 1 / span 1;
+  grid-row: 1 / -1;
   grid-column: 1 / span 1;
   border-radius: 12px;
 }
@@ -1143,6 +1146,12 @@ a {
   .about__picture_container {
     height: 400px;
   }
+}
+
+.about__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about__picture img {
