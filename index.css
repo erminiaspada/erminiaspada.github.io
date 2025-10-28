@@ -551,7 +551,7 @@ a {
   align-items: flex-start;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 834px) {
   .canva__container-text {
     gap: 8px;
     align-self: stretch;
