@@ -8,6 +8,23 @@
     let last = {x:0,y:0};
     let strokeColor = '#3D0093';
     let strokeSize = 2;
+    let hasDrawn = false; // ← NEW
+
+    function enableButton() { // ← NEW
+        if (!hasDrawn) {
+            hasDrawn = true;
+            const btn = document.getElementById('blast-off-btn');
+            btn.removeAttribute('aria-disabled');
+        }
+    }
+
+    function resetCanvas() { // ← NEW
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, canvas.width / window.devicePixelRatio, canvas.height / window.devicePixelRatio);
+    hasDrawn = false;
+    const btn = document.getElementById('blast-off-btn');
+    btn.setAttribute('aria-disabled', 'true');
+}
 
     function resizeCanvas() {
         const rect = container.getBoundingClientRect();
@@ -33,11 +50,12 @@
         };
     }
 
-    function startDraw(e){
+     function startDraw(e){
         isDrawing = true;
         const p = getPos(e);
         last = p;
         drawDot(p.x,p.y);
+        enableButton(); // ← NEW
     }
 
     function draw(e){
@@ -109,6 +127,7 @@
 
             if(res.ok){
                 alert("Shooted! 🔫");
+                resetCanvas();
             } else {
                 const err = await res.text();
                 console.error("Errore:", err);

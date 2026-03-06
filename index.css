@@ -167,6 +167,12 @@ a {
   background-color: var(--primary-pressed);
 }
 
+.button--contained-dark-sky[aria-disabled="true"] {
+  opacity: 0.38;
+  pointer-events: none;
+  cursor: default;
+}
+
 .button--contained-nebulosa:disabled {
   opacity: 0.38;
   color: var(--white);
